@@ -57,3 +57,47 @@ You will receive a response telling you that it has deployed
 Now serving at http://meteorspark.meteor.com"```
 
 Enter that url in your browser and you will see your app running!
+
+
+----
+
+##File Structure
+######Built From Meteor Skeleton ```https://github.com/kjetilhau/meteor-skeleton```
+
+```
+app/
+ client/							# Client code
+   config/						# Configuration files
+   lib/							# Library files that get executed first
+     helpers/ 					# Helpers that helps you and yours
+   routes/						# Everything related to client-side routing
+   startup/						# Stuff that gets launched at client load
+    stylesheets/					# CSS/LESS/SCSS files
+     components/					# Styles for specific components
+     sites/						# Styles for sites and collections
+   subscriptions/				# Collection subscriptions that are not defined in routes
+   views/						# View templates
+     documents/					# Views related to the Documents collection
+     layouts/					# Layout files defined with Iron Router
+     pages/						# Views for static pages
+     shared/						# Usually templates that are shared between views
+ lib/							# Code shared with client and server files
+   collections/					# Collection files, separate files for each collection
+   helpers/						# Helpers that is accessible on both client and server
+ public/							# Public files
+   img/							# Static image folder
+   fonts/						# Static fonts folder
+ server/							# Server code
+   config/						# Server configuration files
+   fixtures/						# Fixtures for defining pre-loaded data
+   lib/							# Server-side library folder
+   publications/					# Collection publications, separate files for each collection
+  startup/						# Stuff that gets launched at server startup
+config/
+tests/
+```
+
+
+
+
+
