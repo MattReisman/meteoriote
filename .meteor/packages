@@ -1,0 +1,17 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# Atmosphere
+
+aldeed:autoform
+aldeed:collection2
+aldeed:simple-schema
+iron:router
+alanning:roles
+accounts-base
+meteor-platform
+twbs:bootstrap
+momentjs:moment
+zimme:iron-router-active
