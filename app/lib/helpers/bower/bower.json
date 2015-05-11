@@ -1,9 +1,0 @@
-{
-  "name": "meteorSpark",
-  "version": "0.0.1",
-  "dependencies": {
-    "select2": "3.4.5",
-    "backbone": "1.1.0"
-  },
-  "private": true
-}
