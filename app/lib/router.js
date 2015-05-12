@@ -21,3 +21,9 @@ Router.route('/about', function() {
 }, {
   name: 'about'
 });
+
+Router.route('/dashboard', function() {
+  this.render('dashboardIndex');
+}, {
+  name: 'dashboard'
+});
