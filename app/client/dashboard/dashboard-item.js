@@ -3,3 +3,8 @@ Template.dashboardItem.helpers({
     return Devices.find();
   }
 });
+Template.dashboardItem.events({
+  selectedDevice: function() {
+    return Devices.find();
+  }
+});
