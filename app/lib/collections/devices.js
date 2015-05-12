@@ -1,8 +1,8 @@
-Cores = new Mongo.Collection('cores');
+Devices = new Mongo.Collection('devices');
 
 var Schemas = {};
 
-Schemas.Core = new SimpleSchema({
+Schemas.Device = new SimpleSchema({
   deviceName: {
     type: String,
     label: "Name",
@@ -27,13 +27,13 @@ Schemas.Core = new SimpleSchema({
   }
 });
 
-Cores.attachSchema(Schemas.Core);
+Devices.attachSchema(Schemas.Device);
 
-Cores.allow({
+Devices.allow({
   insert: function(userId, doc){
     return doc && doc.userId === userId;
   },
   update: function(userId, doc){
     return doc && doc.userId === userId;
-  }
+  },
 });
