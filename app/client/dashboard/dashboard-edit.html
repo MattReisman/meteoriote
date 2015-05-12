@@ -1,0 +1,15 @@
+<template name="dashboardEdit">
+
+  <div>
+    {{#autoForm collection="Cores" id="updateCoreForm" type="update"}}
+        <fieldset>
+      {{> afQuickField name='deviceName'}}
+      {{> afQuickField name='deviceDescription'}}
+      {{> afQuickField name='deviceId'}}
+      {{> afQuickField name='accessToken'}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Insert</button>
+  {{/autoForm}}
+  </div>
+  <a class="btn" href="{{pathFor route='dashboard'}}">Back</a>
+</template>

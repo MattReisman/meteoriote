@@ -1,2 +1,5 @@
-.meteor/local
-.meteor/meteorite
+app/.meteor/local
+app/.meteor/meteorite
+
+
+hardware/example.ino
