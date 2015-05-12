@@ -1,0 +1,14 @@
+<template name="dashboardItem">
+  <div class="panel">
+    <div class="panel-heading">
+      <h3>Devices</h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        {{#each devices}}
+        <li><a href="{{pathFor 'dashboard'}}">{{deviceName}}</a> - <span class="label label-warning"><a href="{{pathFor 'dashboard.edit'}}">Edit</a></span></li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</template>

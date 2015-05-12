@@ -1,11 +1,16 @@
 <template name="dashboardIndex">
-  <div class="row dashboard">
-    <div class="col-md-3">
-      {{> dashboardAdd}}
-    </div>
-    <div class="col-md-9">
-      {{> dashboardAdd}}
+  <div class="container">
+    <div class="row dashboard">
+
+      <div class="col-md-3">
+        {{> dashboardAdd}}
+        {{> dashboardItem}}
+      </div>
+
+      <div class="col-md-9">
+        {{> dashboardControl}}
+      </div>
+
     </div>
   </div>
-
 </template>

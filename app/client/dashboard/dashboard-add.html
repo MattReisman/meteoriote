@@ -1,8 +1,24 @@
 <template name="dashboardAdd">
 
+          <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add Device</h3>
+          </div>
+          <div class="panel-body">
   <div>
-    <h1> Add a Core </h1>
-    {{> quickForm collection="Cores" id="insertCoreForm" type="insert"}}
+    {{#autoForm collection="Cores" id="insertCoreForm" type="insert"}}
+        <fieldset>
+              {{> afQuickField name='deviceName'}}
+      {{> afQuickField name='deviceDescription'}}
+
+      {{> afQuickField name='deviceId'}}
+      {{> afQuickField name='accessToken'}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Insert</button>
+  {{/autoForm}}
   </div>
 
+
+          </div>
+        </div>
 </template>

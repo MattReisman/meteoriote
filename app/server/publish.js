@@ -16,3 +16,10 @@
 //   return Todos.find({listId: listId});
 // });
 
+Meteor.publish('userDevices', function() {
+  if (this.userId) {
+    return Cores.find({userId: this.userId});
+  } else {
+    this.ready();
+  }
+})

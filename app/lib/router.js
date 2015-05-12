@@ -8,6 +8,11 @@ Router.configure({
   // show the appLoading template whilst the subscriptions below load their data
   loadingTemplate: 'appLoading',
 
+  waitOn: function() {
+    return [
+      Meteor.subscribe('userDevices')
+    ];
+  }
 });
 
 Router.route('/', function() {
@@ -26,4 +31,18 @@ Router.route('/dashboard', function() {
   this.render('dashboardIndex');
 }, {
   name: 'dashboard'
+});
+
+Router.route('/dashboard/:_id', function() {
+  var item = Cores.findOne({_id: this.params._id});
+  this.render('dashboardItem', {data: item});
+}, {
+  name: 'dashboard.item'
+});
+
+Router.route('/dashboard/:_id/edit', function() {
+  var item = Cores.findOne({_id: this.params._id});
+  this.render('dashboardEdit', {data: item});
+}, {
+  name: 'dashboard.edit'
 });
