@@ -1,5 +1,4 @@
-
-var coreHooks = {
+var deviceHooks = {
   before: {
     insert: function(doc) {
       if(Meteor.userId()){
@@ -11,4 +10,17 @@ var coreHooks = {
   }
 }
 
-AutoForm.addHooks('insertCoreForm', coreHooks);
+var deviceHoooks = {
+  before: {
+    update: function(doc) {
+      if(Meteor.userId()){
+        doc.userId = Meteor.userId();
+      }
+      return doc;
+    }
+  }
+}
+
+
+AutoForm.addHooks('insertDeviceForm', deviceHooks);
+// AutoForm.addHooks('updateDeviceForm', deviceHoooks);
