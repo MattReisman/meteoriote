@@ -1,14 +1,43 @@
 <template name="dashboardItem">
-  <div class="panel">
-    <div class="panel-heading">
-      <h3>Devices</h3>
-    </div>
-    <div class="panel-body">
-      <ul>
+
+      <ul class="pagination">
+        <li class="disabled"><a href="#">«</a></li>
         {{#each devices}}
-        <li><a href="{{pathFor 'dashboard'}}">{{deviceName}}</a> - <span class="label label-warning"><a href="{{pathFor 'dashboard.edit'}}">Edit</a></span></li>
+          <li class="device-listitems">
+
+            <a  class="device-items" href="#">
+            {{deviceName}} -
+           <a href="{{pathFor 'dashboard.edit'}}">
+              <span class="device-edit glyphicon glyphicon-edit" aria-hidden="true"></span>
+            </a>
+         </a>
+          </li>
         {{/each}}
+        <li><a href="#">»</a></li>
+
       </ul>
-    </div>
-  </div>
+
 </template>
+
+<!--
+        {{#each devices}}
+        <li class="device-items"><a href="{{pathFor 'dashboard'}}">{{deviceName}}</a> - <span class="label label-warning"><a href="{{pathFor 'dashboard.edit'}}">Edit</a></span></li>
+        {{/each}}
+      </ul> -->
+
+
+<!-- <div class="list-group">
+  {{#each devices}}
+    <a href="#" class="list-group-item">
+      <span class="device-items">
+        <a href="{{pathFor 'dashboard'}}"> {{deviceName}} </a>
+      </span>
+     <span class="label label-warning">
+      <a href="{{pathFor 'dashboard.edit'}}">
+        Edit
+      </a>
+      </span>
+    </a>
+  {{/each}}
+</div> -->
+

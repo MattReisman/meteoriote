@@ -1,8 +1,6 @@
-Template.dashboardItem.helpers({
-  devices: function() {
-    return Devices.find();
-  }
-});
+// Template.dashboardIndex.helpers({
+//   'activeDevice': function()
+// });
 
 // Template.dashboardItem.events({
 //   'click .device-items': function() {
