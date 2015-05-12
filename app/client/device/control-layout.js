@@ -1,4 +1,4 @@
-Template.dashboardControl.helpers({
+Template.controlLayout.helpers({
   'device': function() {
     return Devices.find();
   },
@@ -11,7 +11,7 @@ Template.dashboardControl.helpers({
   }
 });
 
-Template.dashboardControl.events({
+Template.controlLayout.events({
   'click .device-items': function() {
 
     var deviceId = this._id;

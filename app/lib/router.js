@@ -40,9 +40,17 @@ Router.route('/dashboard/:_id', function() {
   name: 'dashboard.item'
 });
 
-Router.route('/dashboard/:_id/edit', function() {
-  var item = Devices.findOne({_id: this.params._id});
-  this.render('dashboardEdit', {data: item});
+Router.route('/device/:_id', function() {
+ var item = Devices.findOne({_id: this.params._id});
+  this.render('control.item', {data: item});
 }, {
-  name: 'dashboard.edit'
+  name: 'control.item'
 });
+
+Router.route('/device/:_id/edit', function() {
+  var item = Devices.findOne({_id: this.params._id});
+  this.render('deviceEdit', {data: item});
+}, {
+  name: 'device.edit'
+});
+

@@ -45,3 +45,8 @@ div.panel-heading {
 h3.panel-title {
   text-align: center;
 }
+
+li.device-items.selectedDevice > a{
+    background-color: yellow;
+
+}
