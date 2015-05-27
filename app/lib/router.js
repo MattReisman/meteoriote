@@ -35,10 +35,12 @@ Router.route('/dashboard', function() {
 
 Router.route('/dashboard/:_id', function() {
   var item = Devices.findOne({_id: this.params._id});
-  this.render('dashboardItem', {data: item});
+  this.render('dashboardDevice', {data: item});
 }, {
-  name: 'dashboard.item'
+  name: 'dashboard.device'
 });
+
+
 
 Router.route('/dashboard/:_id/edit', function() {
   var item = Devices.findOne({_id: this.params._id});
@@ -46,3 +48,30 @@ Router.route('/dashboard/:_id/edit', function() {
 }, {
   name: 'dashboard.edit'
 });
+
+// Router.route('/dashboard/:_id', function() {
+//   this,layout('appLayout', {
+//     data: function() {
+//       return Devices.findOne({_id: this.params._id});
+//     }
+//   });
+
+//   this.render('dashboardDevice', {});
+
+// }, {
+//   name: 'dashboard.device'
+// });
+
+
+// Router.route('/dashboard/:_id/edit', function() {
+//   this,layout('appLayout', {
+//     data: function() {
+//       return Devices.findOne({_id: this.params._id});
+//     }
+//   });
+
+//   this.render('dashboardEdit', {});
+
+// }, {
+//   name: 'dashboard.edit'
+// });

@@ -1,3 +1,61 @@
 .dashboard {
   margin: 20px;
 }
+
+
+div.panel-body.device-listing {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+div.panel-body.device-listing ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul.devices{
+  padding: 0;
+  margin: 0;
+}
+.device-items {
+  /*text-decoration: none;*/
+  list-style: none;
+  /*font-size: 18px;*/
+  background-color: #f5f5f5;
+  /*border: 1px solid #cccccc;*/
+  /*border-radius: 2px;*/
+  /*margin: 4px 0;*/
+  /*padding: 4px 0;*/
+}
+li.device-items > a {
+ color: #222;
+ padding: 0 4px;
+}
+
+
+span.label.label-warning.device-edit {
+  /*display: none;*/
+}
+
+div.panel-heading {
+  text-align: center;
+}
+
+h3.panel-title {
+  text-align: center;
+}
+
+li.device-items.selectedDevice > a{
+    background-color: yellow;
+
+}
+
+span.device-list {
+  float: right;
+  /*width: 100px;*/
+}
+
+span.device-list > a{
+  width: 150px;
+}
