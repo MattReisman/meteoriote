@@ -10,7 +10,7 @@ Schemas.Device = new SimpleSchema({
   },
   deviceDescription: {
     type: String,
-    label: "Name",
+    label: "Description",
     max: 200
   },
   deviceId: {

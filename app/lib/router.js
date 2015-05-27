@@ -40,9 +40,38 @@ Router.route('/dashboard/:_id', function() {
   name: 'dashboard.device'
 });
 
+
+
 Router.route('/dashboard/:_id/edit', function() {
   var item = Devices.findOne({_id: this.params._id});
   this.render('dashboardEdit', {data: item});
 }, {
   name: 'dashboard.edit'
 });
+
+// Router.route('/dashboard/:_id', function() {
+//   this,layout('appLayout', {
+//     data: function() {
+//       return Devices.findOne({_id: this.params._id});
+//     }
+//   });
+
+//   this.render('dashboardDevice', {});
+
+// }, {
+//   name: 'dashboard.device'
+// });
+
+
+// Router.route('/dashboard/:_id/edit', function() {
+//   this,layout('appLayout', {
+//     data: function() {
+//       return Devices.findOne({_id: this.params._id});
+//     }
+//   });
+
+//   this.render('dashboardEdit', {});
+
+// }, {
+//   name: 'dashboard.edit'
+// });

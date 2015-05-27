@@ -50,3 +50,12 @@ li.device-items.selectedDevice > a{
     background-color: yellow;
 
 }
+
+span.device-list {
+  float: right;
+  /*width: 100px;*/
+}
+
+span.device-list > a{
+  width: 150px;
+}

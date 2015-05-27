@@ -11,7 +11,7 @@ Template.dashboardItem.helpers({
   }
 });
 
-Template.controlLayout.events({
+Template.dashboardItem.events({
   'click .device-items': function() {
 
     var deviceId = this._id;

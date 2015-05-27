@@ -1,6 +1,10 @@
 <template name="dashboardDevice">
-<h1>Device Profile</h1>
-<a href="{{pathFor 'dashboard.edit'}}">Edit</a>
+        <div class="panel-body device-listing">
+        {{> dashboardItem}}
+        </div>
+<h1>{{deviceName}} </h1>
+            <span class=""> <a class="btn btn-primary btn-sm btn-danger" href="{{pathFor 'dashboard.edit'}}">Edit Device info</a></span>
+<hr>
 <button>one</button>
 <button>two</button>
 </template>
