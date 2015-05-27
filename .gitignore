@@ -1,5 +1,6 @@
 app/.meteor/local
 app/.meteor/meteorite
 
+ignored.md
 
 hardware/example.ino
