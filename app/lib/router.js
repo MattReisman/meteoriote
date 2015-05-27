@@ -35,22 +35,14 @@ Router.route('/dashboard', function() {
 
 Router.route('/dashboard/:_id', function() {
   var item = Devices.findOne({_id: this.params._id});
-  this.render('dashboardItem', {data: item});
+  this.render('dashboardDevice', {data: item});
 }, {
-  name: 'dashboard.item'
+  name: 'dashboard.device'
 });
 
-Router.route('/device/:_id', function() {
- var item = Devices.findOne({_id: this.params._id});
-  this.render('control.item', {data: item});
-}, {
-  name: 'control.item'
-});
-
-Router.route('/device/:_id/edit', function() {
+Router.route('/dashboard/:_id/edit', function() {
   var item = Devices.findOne({_id: this.params._id});
-  this.render('deviceEdit', {data: item});
+  this.render('dashboardEdit', {data: item});
 }, {
-  name: 'device.edit'
+  name: 'dashboard.edit'
 });
-

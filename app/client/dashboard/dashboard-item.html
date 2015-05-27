@@ -1,17 +1,24 @@
 <template name="dashboardItem">
-
-  <ul class="pagination">
+<!--
+<ul class="pagination">
     <li class="disabled"><a href="#">«</a></li>
     {{#each devices}}
     <li class="device-items {{activeDevice}}">
-      <a  class="device-link" href="#">
-        {{deviceName}}
-      </a>
+      <a  class="device-link" href="#"> {{deviceName}} </a>
     </li>
+</ul>
+    -->
+
+<ul class="pagination">
+<li class="disabled"><a href="#">«</a></li>
+{{#each devices}}
+    <li class="device-items {{activeDevice}}">
+      <a class="device-link" href="{{pathFor 'dashboard.device'}}">{{deviceName}}</a>
+    </li>
+
     {{/each}}
     <li><a href="#">»</a></li>
 
   </ul>
 
 </template>
-
