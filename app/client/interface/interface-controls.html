@@ -1,0 +1,33 @@
+<template name="interfaceControls">
+  <!-- <hr> -->
+  <div class=" control-box">
+
+    <div class ="device-form">
+
+      <div>
+        <p class ="device-listing">
+          Device Id:{{device}} -
+          <span>Access Token: {{token}}</span>
+        </p>
+      </div>
+
+      <div class="light-switch">
+        <p>The Spark LED is
+          {{#if lightState}}
+            on -
+          {{else}}
+            off -
+          {{/if}}
+          <span>
+            {{#if lightState}}
+            <button id="lightButton">Turn OFF</button>
+            {{else}}
+            <button id="lightButton">Turn ON</button>
+            {{/if}}
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</template>
