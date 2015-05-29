@@ -1,10 +1,26 @@
 <template name="dashboardDevice">
-        <div class="panel-body device-listing">
-        {{> dashboardItem}}
+  <div class="container">
+
+    <div class="panel-body device-listing">
+      {{> dashboardItem}}
+    </div>
+
+    <div>
+      {{> deviceActive}}
+    </div>
+
+    <hr>
+
+    <div class="jumbotron">
+      <div class="row">
+        <div class="controls col-md-6">
+          {{>interfaceControls}}
         </div>
-<h1>{{deviceName}} </h1>
-            <span class=""> <a class="btn btn-primary btn-sm btn-danger" href="{{pathFor 'dashboard.edit'}}">Edit Device info</a></span>
-<hr>
-<button>one</button>
-<button>two</button>
+        <div class="controls col-md-6">
+          {{>interfaceSensors}}
+        </div>
+      </div>
+    </div>
+
+  </div>
 </template>

@@ -1,0 +1,9 @@
+
+.light-switch {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(205, 5, 55, .1);
+  text-align: center;
+  border-radius: 10px;
+}
+

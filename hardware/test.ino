@@ -1,28 +1,34 @@
-// EXAMPLE USAGE
-int brewCoffee(String command);
-
-void setup()
-{
-  // register the Spark function
-  Spark.function("brew", brewCoffee);
-}
-
-void loop()
-{
-  // this loops forever
-}
-
-// this function automagically gets called upon a matching POST request
-int brewCoffee(String command)
-{
-  // look for the matching argument "coffee" <-- max of 64 characters long
-  if(command == "coffee")
+int led = D0;
+int ledState = 0;
+int toggleLight(String args)
   {
-    // some example functions you might have
-    //activateWaterHeater();
-    //activateWaterPump();
-    return 1;
+    if(ledState == 1)
+    {
+        digitalWrite(led, LOW);
+        ledState = 0;
+    } else {
+        digitalWrite(led, HIGH);
+        ledState = 1;
+    }
+  return ledState;
   }
-  else return -1;
+
+void setup() {
+  pinMode(led, OUTPUT);
+  Spark.variable("lights", &ledState, INT);
+  Spark.function("toggleLight", toggleLight);
 }
-COMPLE
+
+void loop() {
+    if(ledState==TRUE)
+    {
+     digitalWrite(led, HIGH);
+
+    }
+    else
+    {
+    digitalWrite(led, LOW);
+    }
+    delay(1000);
+}
+
