@@ -1,12 +1,20 @@
 <template name="contentHome">
   <div class="container">
-    <div class="jumbotron">
-      <h1>meteorSpark</h1>
-      <p>A boilerplate for Meteor and Spark Core.</p>
+    <div class="jumbotron main-home">
+    <div>
+      <a href="pathFor route='dashboard"><img src="img/meteorfull.png" alt="" class="home-image"></a>
+</div>
+      <span class="label-home">A boilerplate Meteor app for IoT prototyping</span>
 
+  <div class="home-buttons">
       <p>
-        <a class="btn btn-lg btn-primary" href="https://github.com/MattReisman/meteorSpark" role="button">Link to Github Page</a>
+        <a class="btn btn-lg btn-primary" href="https://github.com/MattReisman/meteorSpark" role="button">Link to Github Page</a
+        >
+        {{#if currentUser}}
+        <span>       <a class="btn btn-lg btn-default" href="{{pathFor route='dashboard'}}" role="button">Go to Device Dashboard</a></span>
+        {{/if}}
       </p>
+      </div>
     </div>
   </div> <!-- /container -->
 </template>

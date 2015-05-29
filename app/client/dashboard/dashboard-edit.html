@@ -15,8 +15,9 @@
         <button type="submit" class="btn btn-primary">Insert</button>
         {{/autoForm}}
       </div>
-    </div>
-    <a class="btn" href="{{pathFor route='dashboard'}}">Back</a>
+    </div><!--
+          <a class="device-link" href="{{pathFor 'dashboard.device'}}"> -->
+    <a class="btn" href="{{pathFor route='dashboard.device'}}">Back</a>
   </div>
 
   <!-- {{> quickForm collection="Devices" doc=this id="updateDeviceForm" type="update"}} -->

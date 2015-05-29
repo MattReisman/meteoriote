@@ -1,0 +1,26 @@
+.navbar-image {
+  max-height: 18px;
+}
+
+.home-image{
+  max-width: 70%;
+  margin: 20px;
+}
+
+.main-home {
+  background: #eee;
+  text-align: center;
+/*  padding: 20px;
+  margin: 20px;*/
+}
+
+.label-home {
+  font-size: 22px;
+  max-width: 100%;
+ /* padding: 10px;
+  margin: 20px;*/
+}
+
+.home-buttons {
+  margin: 30px;
+}
