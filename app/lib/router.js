@@ -33,22 +33,28 @@ Router.route('/dashboard', function() {
   name: 'dashboard'
 });
 
-Router.route('/dashboard/:_id', function() {
+Router.route('/device/:_id', function() {
   var item = Devices.findOne({_id: this.params._id});
-  this.render('dashboardDevice', {data: item});
+  this.render('deviceController', {data: item});
 }, {
   name: 'dashboard.device'
 });
 
 
 
-Router.route('/dashboard/:_id/edit', function() {
+Router.route('/device/:_id/edit', function() {
   var item = Devices.findOne({_id: this.params._id});
-  this.render('dashboardEdit', {data: item});
+  this.render('deviceEdit', {data: item});
 }, {
   name: 'dashboard.edit'
 });
 
+Router.route('/device/:_id/pinadd', function() {
+  var item = Devices.findOne({_id: this.params._id});
+  this.render('pinAdd', {data: item});
+}, {
+  name: 'pinAdd'
+});
 // Router.route('/dashboard/:_id', function() {
 //   this,layout('appLayout', {
 //     data: function() {

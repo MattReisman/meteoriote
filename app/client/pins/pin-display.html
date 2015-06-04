@@ -1,0 +1,10 @@
+<template name="pinDisplay">
+    <a class="btn" href="{{pathFor route='pinAdd'}}">Add Pin</a>
+  <ul>
+  {{#each pins}}
+  <li>
+    <p>{{name}}{{position}}{{direction}}</p>
+  </li>
+  {{/each}}
+  </ul>
+</template>
