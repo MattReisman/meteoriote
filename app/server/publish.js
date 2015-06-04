@@ -24,3 +24,7 @@ Meteor.publish('userDevices', function() {
     this.ready();
   }
 })
+
+// Meteor.publish('userDevices', function() {
+//     return Devices.find({userId: this.userId});
+// });

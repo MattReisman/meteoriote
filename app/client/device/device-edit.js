@@ -1,5 +1,5 @@
 
-Template.dashboardEdit.events({
+Template.deviceEdit.events({
   'submit form': function(e) {
     e.preventDefault();
 

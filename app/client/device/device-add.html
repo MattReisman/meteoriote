@@ -1,11 +1,12 @@
-<template name="dashboardEdit">
+<template name="deviceAdd">
+
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h3 class="panel-title">Edit Device</h3>
+      <h3 class="panel-title">Add Device</h3>
     </div>
     <div class="panel-body">
       <div>
-        {{#autoForm collection="Devices" id="updateDeviceForm" type="update" doc=this}}
+        {{#autoForm collection="Devices" id="insertDeviceForm" type="insert"}}
         <fieldset>
           {{> afQuickField name='deviceName'}}
           {{> afQuickField name='deviceDescription'}}
@@ -15,10 +16,6 @@
         <button type="submit" class="btn btn-primary">Insert</button>
         {{/autoForm}}
       </div>
-    </div><!--
-          <a class="device-link" href="{{pathFor 'dashboard.device'}}"> -->
-    <a class="btn" href="{{pathFor route='dashboard.device'}}">Back</a>
+    </div>
   </div>
-
-  <!-- {{> quickForm collection="Devices" doc=this id="updateDeviceForm" type="update"}} -->
 </template>
