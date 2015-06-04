@@ -16,6 +16,7 @@ Schemas.Device = new SimpleSchema({
   deviceType: {
     type: String,
     label: "Device Type",
+    optional: true
   },
   deviceId: {
     type: String,
@@ -23,7 +24,8 @@ Schemas.Device = new SimpleSchema({
   },
   userId: {
     type: String,
-    label: "Title"
+    label: "Title",
+    optional: true
   },
   accessToken: {
     type: String,
