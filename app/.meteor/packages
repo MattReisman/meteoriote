@@ -62,8 +62,8 @@ email
   #ACCOUNTS#
 
 accounts-password
-#accounts-ui
-ian:accounts-ui-bootstrap-3
+accounts-ui
+
 alanning:roles
 
 ######################################

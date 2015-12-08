@@ -17,9 +17,16 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
         {{#if currentUser}}
-          <li class="{{isActiveRoute regex='dashboard'}}"><a href="{{pathFor route='dashboard'}}">Dashboard</a></li>
+          <li class="{{isActiveRoute regex='interface'}}"><a href="{{pathFor route='interface'}}">Interface</a></li>
+           <li class="{{isActiveRoute regex='dashboard'}}"><a href="{{pathFor route='dashboard'}}">Devices</a></li>
+           <li class="{{isActiveRoute regex='accountUpdate'}}"><a href="{{pathFor route='accountUpdate'}}">Account</a></li>
+           <!-- <li class="{{isActiveRoute regex='accountLogout'}} visible-lg"><a href="{{pathFor route='accountLogout'}}">Logout</a></li> -->
+           <li>{{>accountLogout}}</li>
+           {{else}}
+           <li class="{{isActiveRoute regex='accountLogin'}}"><a href="{{pathFor route='accountLogin'}}">Sign In</a></li>
           {{/if}}
-          <li><a href="#">{{>loginButtons}}</a></li>
+
+          <!-- <li><a href="#">{{>loginButtons}}</a></li> -->
         </ul>
       </div>
     </div>
