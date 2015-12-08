@@ -5,19 +5,80 @@
 
 # Atmosphere
 
-aldeed:autoform
-aldeed:collection2
-aldeed:simple-schema
-iron:router
-alanning:roles
-accounts-base
-meteor-platform
-twbs:bootstrap
-momentjs:moment
-zimme:iron-router-active
-accounts-password
-ian:accounts-ui-bootstrap-3
-msavin:mongol
+
+######################################
+  #METEOR#
 
 http
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
 
+
+
+
+######################################
+  #DEV TOOLS#
+
+msavin:mongol
+houston:admin
+
+
+######################################
+  #ROUTING#
+zimme:active-route
+
+
+######################################
+  #DATA & SECURITY#
+check
+#audit-argument-checks
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
+
+######################################
+  #LANGUAGE SUPPORT#
+fourseven:scss@=3.2.0
+
+
+######################################
+  #INTEGRATIONS#
+#okgrow:analytics
+email
+
+######################################
+  #ACCOUNTS#
+#accounts-base
+accounts-ui
+accounts-password
+alanning:roles
+
+######################################
+  #LIBRARIES#
+twbs:bootstrap
+mrt:flash-messages
+momentjs:moment
+
+
+######################################
+  #DESIGN#
+fortawesome:fontawesome
+ian:accounts-ui-bootstrap-3
+
+######################################
+  #NEWLY ADDED#
+
+
+
+iron:router
