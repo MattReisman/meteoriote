@@ -5,7 +5,6 @@
 
 # Atmosphere
 
-
 ######################################
   #METEOR#
 
@@ -30,12 +29,14 @@ spacebars
 ######################################
   #DEV TOOLS#
 
-msavin:mongol
-houston:admin
+#msavin:mongol
+#houston:admin
 
 
 ######################################
   #ROUTING#
+
+iron:router
 zimme:active-route
 
 
@@ -59,9 +60,10 @@ email
 
 ######################################
   #ACCOUNTS#
-#accounts-base
-accounts-ui
+
 accounts-password
+#accounts-ui
+ian:accounts-ui-bootstrap-3
 alanning:roles
 
 ######################################
@@ -74,11 +76,8 @@ momentjs:moment
 ######################################
   #DESIGN#
 fortawesome:fontawesome
-ian:accounts-ui-bootstrap-3
 
 ######################################
   #NEWLY ADDED#
 
 
-
-iron:router

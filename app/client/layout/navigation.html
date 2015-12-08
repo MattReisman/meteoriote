@@ -1,4 +1,4 @@
-<template name="header">
+<template name='navigation'>
   <!-- Static navbar -->
   <div class="navbar navbar-default navbar-static-top" role="navigation">
  <div class="container-fluid">      <div class="navbar-header">
@@ -19,7 +19,7 @@
         {{#if currentUser}}
           <li class="{{isActiveRoute regex='dashboard'}}"><a href="{{pathFor route='dashboard'}}">Dashboard</a></li>
           {{/if}}
-          <li><a href="#">{{> loginButtons}}</a></li>
+          <li><a href="#">{{>loginButtons}}</a></li>
         </ul>
       </div>
     </div>

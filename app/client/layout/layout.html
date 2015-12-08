@@ -1,14 +1,16 @@
+<template name='layout'>
 
- <template name='layout'>
+  {{>flashMessages}}
 
   <header>
     {{>navigation}}
   </header>
 
-    {{>yield}}
+  {{>yield}}
 
   <footer>
-    {{>Footer}}
+    {{>footer}}
   </footer>
 
- </template>
+</template>
+
