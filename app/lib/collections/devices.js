@@ -16,7 +16,8 @@ Schemas.Device = new SimpleSchema({
   deviceType: {
     type: String,
     label: "Device Type",
-    optional: true
+    optional: true,
+    allowedValues: ['Particle - Core']
   },
   deviceId: {
     type: String,

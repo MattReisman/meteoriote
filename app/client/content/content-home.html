@@ -1,7 +1,5 @@
-<template name='home'>
-<h1>home  </h1>
-</template>
-<!-- <template name="home">
+
+<template name="home">
   <div class="container">
     <div class="jumbotron main-home">
     <div>
@@ -15,10 +13,12 @@
         >
         {{#if currentUser}}
         <span>       <a class="btn btn-lg btn-default" href="{{pathFor route='dashboard'}}" role="button">Go to Device Dashboard</a></span>
+        {{else}}
+        <span>       <a class="btn btn-lg btn-success" href="{{pathFor route='accountLogin'}}" role="button">Sign in </a></span>
         {{/if}}
       </p>
       </div>
     </div>
   </div>
 </template>
- -->
+
